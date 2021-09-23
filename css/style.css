@@ -455,6 +455,18 @@ html {
   .how__img-container {
     flex-direction: column;
   }
+  .btn_blog,
+  .btn_facebook,
+  .btn_instagram {
+    width: 294px;
+    height: 60px;
+    font-size: 1.7rem;
+  }
+  .how__img-box1,
+  .how__img-box2,
+  .how__img-box3 {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .intro-1__img {
@@ -578,13 +590,7 @@ html {
     font-size: 2.8rem;
     line-height: 3rem;
   }
-  .btn_blog,
-  .btn_facebook,
-  .btn_instagram {
-    width: 269px;
-    height: 60px;
-    font-size: 1.7rem;
-  }
+
   .footer__bottom {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -616,6 +622,11 @@ html {
   .intro-2__schedule-5 {
     left: -25px;
     top: 390px;
+  }
+  .btn_blog,
+  .btn_facebook,
+  .btn_instagram {
+    width: 194px;
   }
 }
 
@@ -690,11 +701,6 @@ html {
   .how__content {
     margin: 16px 0 40px 0;
   }
-  .how__img-box1,
-  .how__img-box2,
-  .how__img-box3 {
-    margin-bottom: 30px;
-  }
   #film {
     background-image: url(../images/1200px_film--img.png);
   }
@@ -736,20 +742,23 @@ html {
   }
 
   .footer__top-title {
-    font-size: 1.8rem;
-    margin: 47px 0 42px 0;
+    font-size: 2.1rem;
+  }
+  .footer__btn {
+    flex-direction: column;
+    font-size: 1.4rem;
+    align-items: center;
   }
   .btn_blog,
   .btn_facebook,
   .btn_instagram {
-    width: 187px;
-    height: 42px;
-    font-size: 1.2rem;
+    width: 223px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 22px;
   }
-
-  .footer__bottom-text {
-    font-size: 1.2rem;
-    line-height: 2.4rem;
+  .footer__bottom {
+    margin: 24px 0 74px;
   }
   #intro-1,
   #intro-2,
@@ -866,25 +875,6 @@ html {
     width: 320px;
   }
 
-  .footer__top-title {
-    font-size: 2.1rem;
-  }
-  .footer__btn {
-    flex-direction: column;
-    font-size: 1.4rem;
-    align-items: center;
-  }
-  .btn_blog,
-  .btn_facebook,
-  .btn_instagram {
-    width: 223px;
-    height: 50px;
-    border-radius: 10px;
-    margin-bottom: 22px;
-  }
-  .footer__bottom {
-    margin: 24px 0 74px;
-  }
   #intro-1,
   #intro-2,
   #intro-3,
