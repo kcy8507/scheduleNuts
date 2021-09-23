@@ -175,6 +175,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .intro-3__img {
@@ -770,6 +771,13 @@ html {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .intro-1__img {
+    height: 105px;
+    /* margin-bottom: 90px; */
+  }
+}
+
 @media screen and (max-width: 478px) {
   .inner {
     width: 400px;
@@ -787,15 +795,11 @@ html {
     width: 290px;
     margin: 20px 0;
   }
+
   .intro-1__text3 {
     font-size: 1.4rem;
     line-height: 2.6rem;
     width: 290px;
-  }
-
-  .intro-1__img {
-    height: 105px;
-    /* margin-bottom: 90px; */
   }
 
   /* #intro-2 {
