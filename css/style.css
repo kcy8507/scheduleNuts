@@ -25,7 +25,7 @@ html {
 #intro-2,
 #intro-3,
 #how,
-#film,
+#youtube__container,
 #store,
 #footer {
   display: flex;
@@ -292,7 +292,7 @@ html {
   font-family: "NanumBarunGothic", "나눔바른고딕", sans-serif;
 }
 
-#film {
+#youtube__container {
   height: 100%;
   background-image: url(../images/film.png);
   background-position: center;
@@ -301,31 +301,25 @@ html {
   background-blend-mode: multiply;
 }
 
-.film__container {
+.youtube {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* padding-top: 150px; */
 }
 
-.film__text1 {
+.youtube__text1 {
   font-family: "Jua", sans-serif;
   font-size: 4.6rem;
   color: var(--accent-color);
   margin-bottom: 10px;
 }
 
-.film__text2 {
+.youtube__text2 {
   font-family: "NanumBarunGothic", "나눔바른고딕", sans-serif;
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 75px;
-}
-
-.film__mp4 {
-  width: 990px;
-  height: 556px;
-  background-color: var(--text-color);
 }
 
 #store {
@@ -441,7 +435,7 @@ html {
 #intro-2,
 #intro-3,
 #how,
-#film,
+#youtube__container,
 #store {
   padding: 150px 0;
 }
@@ -567,22 +561,21 @@ html {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
-
-  #film {
+  #youtube__container {
     background-image: url(../images/1200px_film--img.png);
   }
-  /* .film__container {
+  /* .youtube {
     padding-top: 111px;
   } */
-  .film__text1 {
+  .youtube__text1 {
     font-size: 3.8rem;
     margin-bottom: 20px;
   }
-  .film__text2 {
+  .youtube__text2 {
     font-size: 1.8rem;
     margin-bottom: 73px;
   }
-  .film__mp4 {
+  .youtube__area {
     width: 820px;
     height: 461px;
   }
@@ -702,20 +695,16 @@ html {
   .how__content {
     margin: 16px 0 40px 0;
   }
-  #film {
+  #youtube__container {
     background-image: url(../images/1200px_film--img.png);
   }
-  .film__text1 {
+  .youtube__text1 {
     font-size: 2.8rem;
     line-height: 3.1rem;
     width: 294px;
   }
-  .film__text2 {
+  .youtube__text2 {
     font-size: 1.1rem;
-  }
-  .film__mp4 {
-    width: 524px;
-    height: 295px;
   }
 
   .store__title {
@@ -765,7 +754,7 @@ html {
   #intro-2,
   #intro-3,
   #how,
-  #film,
+  #youtube__container,
   #store {
     padding: 100px 0;
   }
@@ -847,21 +836,16 @@ html {
     margin-top: 0px;
   }
 
-  /* #film {
+  #youtube__container {
     height: 784px;
-  } */
-
-  .film__text1 {
+  }
+  .youtube__text1 {
     width: 294px;
     margin: 0 auto 20px auto;
   }
-  .film__text2 {
+  .youtube__text2 {
     font-size: 1.6rem;
-    margin-bottom: 96px;
-  }
-  .film__mp4 {
-    width: 400px;
-    height: 226px;
+    margin-bottom: 46px;
   }
 
   #store {
@@ -883,7 +867,7 @@ html {
   #intro-2,
   #intro-3,
   #how,
-  #film,
+  #youtube__container,
   #store {
     padding: 50px 0;
   }
@@ -897,8 +881,67 @@ html {
   .intro-1__text1 {
     width: 320px;
   }
+}
 
-  .film__mp4 {
-    width: 320px;
+/* -----------------------------------youtube----------------------------- */
+
+body {
+  width: 100%;
+  height: 100%;
+}
+/* 기본적 설정은 패딩탑에 따른 비율 유지 */
+#youtube__container {
+  width: var(--test-size);
+}
+#youtube__container .item {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+:root {
+  --youtube-size: 1200px;
+  --test-size: 1000px;
+}
+@media (max-width: 1000px) {
+  :root {
+    --youtube-size: 900px;
   }
+}
+@media (max-width: 700px) {
+  :root {
+    --youtube-size: 500px;
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --youtube-size: 400px;
+  }
+}
+
+#youtube__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.youtube {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: var(--youtube-size);
+}
+.youtube .youtube__area {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
