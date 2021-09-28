@@ -440,6 +440,12 @@ html {
   padding: 150px 0;
 }
 
+.main__blackbg {
+  display: none;
+}
+.main__popup {
+  display: none;
+}
 /* --------------------------media query---------------------- */
 
 @media screen and (max-width: 1300px) {
@@ -767,6 +773,11 @@ html {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .inner {
+    width: auto;
+  }
+}
 @media screen and (max-width: 478px) {
   .inner {
     width: 400px;
@@ -871,6 +882,114 @@ html {
   #store {
     padding: 50px 0;
   }
+
+  /* 모바일 팝업 */
+
+  .main__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__blackbg {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.58;
+    z-index: 0;
+  }
+  .main__popup {
+    background-color: #fff;
+    width: 406px;
+    height: 530px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+  }
+  .cancel__btn {
+    background-image: url(../images/cancel__btn.png);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .popup__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup__icon {
+    background-color: var(--accent-color);
+    width: 83px;
+    height: 25px;
+    border-radius: 13px;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    margin-top: 16px;
+  }
+  .popup__title {
+    font-family: "Jua", sans-serif;
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+    color: var(--accent-color);
+    margin-top: 24px;
+  }
+  .popup__content {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    margin-top: 18px;
+  }
+  .popup__btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup__google,
+  .popup__apple {
+    width: 246px;
+    height: 62px;
+    border: 1px solid var(--accent-color);
+    border-radius: 36px;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    line-height: 3.4rem;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .google-logo,
+  .apple-logo {
+    width: 27px;
+    height: 3rem;
+    margin-right: 25px;
+  }
+  .popup__google {
+    margin-top: 32px;
+  }
+  .popup__apple {
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+
+  /* body {
+    overflow: hidden;
+  } */
+  .hidden {
+    display: none;
+    overflow: scroll;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -880,6 +999,10 @@ html {
 
   .intro-1__text1 {
     width: 320px;
+  }
+
+  .main__popup {
+    width: 360px;
   }
 }
 

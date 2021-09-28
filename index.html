@@ -29,6 +29,7 @@
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/main.js" defer></script>
     <script src="/js/youtube.js" defer></script>
     <link
       href="https://raw.githubusercontent.com/buppagi/webfonts/master/css/NanumBarunGothic.min.css"
@@ -42,7 +43,37 @@
   </head>
   <body>
     <section id="main">
-      <div class="main__bg"></div>
+      <div class="main__bg">
+        <div class="main__blackbg"></div>
+        <div class="main__popup">
+          <div class="popup__container">
+            <div class="cancel__btn"></div>
+            <div class="popup__icon">다운로드</div>
+            <div class="popup__title">
+              우리아이 <br />
+              모든 스케줄 관리하기!
+            </div>
+            <div class="popup__content">
+              우리 아이의 스케줄 관리부터<br />실시간 위치정보까지,<br />
+              스케줄넛에서 모든 것을 확인하세요
+            </div>
+            <div class="popup__btn">
+              <button class="popup__google">
+                <img
+                  src="/images/google__icon.png"
+                  alt=""
+                  class="google-logo"
+                />
+                <div class="google__text">Google play</div>
+              </button>
+              <button class="popup__apple">
+                <img src="/images/apple__icon.png" alt="" class="apple-logo" />
+                <div class="apple__text">Apple store</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="intro-1">
       <div class="inner">
